@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para queria Josielle</title>
+    <script src="assets/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preload" href="/ImagensNovas/fundo.gif">
+    <style>
+
+    </style>
+</head>
+
+<body class="fundo" onclick="musicaOn()">
+    <audio id="player" autoplay="autoplay" controls="controls" loop="loop">
+        <source src="./assets/trilhasonora.mp3" type="audio/mp3" />
+    </audio>
+    <div class="conteinerCalendario conteudo1">
+        <div id="animacao" class="conteinerCalendario">
+            <div>
+                <h1 style="margin-top: 5%;">Hoje falaremos da mulher mais linda que eu conheço </h1>
+                <h5>Quem será que é?</h5>
+                <button type="button" class="btn btn-danger" onclick="mostrarConteudo()">Descubra!</button>
+                <br>
+                <div>
+                    <img id="fotoGata" style="display: none;" src="./ImagensNovas/Josiele.jpeg" alt=""
+                        class="foto" onmouseover="naoToque()">
+
+                        
+                </div>
+                <div>  
+                     <p></p>        
+                     <p></p>        
+                     <p></p>        
+                    <button type="button" class="btn btn-danger" onclick="mudarConteudo()">Continuar S2</button>                        
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="conteudo2">
+        <div class="conteinerCalendario">
+            <h1 style="margin-top: 5%;">Bem vinda a nova agenda digital</h1>
+            <h5>Existem Eventos Pendentes na data de Hoje, Clique para ver mais</h5>
+            <hr>
+            <table class="calendario">
+                <span><strong class="text-muted">Novembro de 2025</strong></span>
+                <thead>
+                    <tr>
+                        <td>Dom</td>
+                        <td>Seg</td>
+                        <td>Ter</td>
+                        <td>Qua</td>
+                        <td>Qui</td>
+                        <td>Sex</td>
+                        <td>Sáb</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>                        
+                        <td class="marcado" onclick="mudarFoto1()">31</td>
+                        <td class="marcado" onclick="mudarFoto2()">1</td>
+                    </tr>
+                    <tr>
+                        <td class="marcado" onclick="mudarFoto3()">2</td>                 
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td class="marcado" onclick="mudarFoto4()">7</td>         
+                        <td class="marcado" onclick="mudarFoto5()">8</td>       
+                    </tr>
+                    <tr>                    
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>                        
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>                   
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                    </tr>
+                    <tr>
+                   
+                        <td>30</td>
+                        <td class="marcado" onclick="mudarFotoFinal()"> 31 </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+
+            
+
+
+
+            
+                </tbody>
+                
+            </table>
+            
+        </div>
+    </div>
+    <div class="conteudo3">
+        <div class="conteinerCalendario">
+            <h1 style="margin-top: 10%;">Dia 31 de Outubro</h1>
+            <h5>Primeiro Date com o Carlos</h5>
+            <img style="width: 400px; height: 640px; border-radius: 20px; margin-top: 2%; margin-bottom: 2%;"
+                class="imagem1" src="./ImagensNovas/Dia31.PNG" alt="">
+            <small style="margin-top: 5%;">
+                <h5>
+                    Sair com o Carlos? Onde eu to me metendo em? esse mlk é meio doido da cabeça,
+                    ficou andando comigo de mão dada por Maringá
+                    e me fez ver roupas da seção infantil.....</h5>
+            </small>
+             <div>          
+                <button type="button" class="btn btn-danger" onclick="mudarFoto1()">Voltar <=</button>                        
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="conteudo4">
+        <div class="conteinerCalendario">
+            <h1 style="margin-top: 10%;">Dia 01 de Novembro</h1>
+            <h5>Encerramento das Olimpiadas</h5>
+            <img style="width: 400px; height: 640px; border-radius: 20px; margin-top: 2%; margin-bottom: 2%;"
+               class="imagem1" src="./ImagensNovas/01Novembro.jpg" alt="">
+            <small style="margin-top: 5%;"> <br>
+                <h5>Nesse Dia aqui eu recebi um Caralho Josielle, Segundo o Carlos eu tava muito gata,
+                    Dancei para caramba e depois quase dormi por lá... 
+            </small>
+            <div>
+               <button type="button" class="btn btn-danger" onclick="mudarFoto2()">Voltar <=</button>              
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="conteudo5">
+
+        <div class="conteinerCalendario">
+            <h1 style="margin-top: 10%;">Dia 02 de Novembro</h1>
+            <h5>Rolê de Moto?</h5>
+            <img style="width: 400px; height: 640px; border-radius: 20px; margin-top: 2%; margin-bottom: 2%;"
+               class="imagem1" src="./ImagensNovas/Dia02.PNG" alt="">
+            <small style="margin-top: 5%;"> <br>
+                <h5> Porque eu fui ter a brilhante ideia de andar de moto com esse tempo?
+                     tomei chuva e fui zoada o grupo inteiro... 
+            </small>
+             <div>
+               <button type="button" class="btn btn-danger" onclick="mudarFoto3()">Voltar <=</button>              
+             </div>
+        </div>
+    </div>
+
+    <div class="conteudo6">
+        <div class="conteiner-conteudo4">
+            <h1 style="margin-top: 10%;">Dia 07 de Novembro</h1>
+            <h5>Benção do Padre Darcy para ver se as coisas melhoram</h5>
+            <img style="width: 400px; height: 640px; border-radius: 20px; margin-top: 2%; margin-bottom: 2%;"
+               class="imagem1" src="./ImagensNovas/Dia07.PNG" alt="">
+            <small style="margin-top: 5%;"> <br>
+                <h5> Ainda aproveitei para mostrar para o Carlos como sushi é a melhor comida do mundo
+                     Acho que esse mlk ta gostando de mim....
+            </small>
+            <div>
+               <button type="button" class="btn btn-danger" onclick="mudarFoto4()">Voltar <=</button>              
+            </div>
+        </div>
+    </div>
+
+    <div class="conteudo7">
+        <div>
+            <button onclick="mudarFoto5()"><img class="icoRight" src="./ImagensNovas/icoLeft.jpeg" alt=""></button>
+        </div>
+        <div class="conteiner-conteudo4">
+            <h1 style="margin-top: 10%;">Dia 08 de Novembro</h1>
+            <h5>Formatura do Modulo basico</h5>
+            <img style="width: 400px; height: 640px; border-radius: 20px; margin-top: 2%; margin-bottom: 2%;"
+               class="imagem1" src="./ImagensNovas/dia08.jpg" alt="">
+            <small style="margin-top: 5%;"> <br>
+                <h5> Esse mlk diz  que gosta de mim e me chega 21:30 para um negocio que tava marcado para as 19:30,
+                     Ficou falando para eu treinar falar aceito para o pedido de namoro dele e                       
+                     Ainda por cima fica passando a mão no meu cabelo para fazer eu dormir? Certeza que ele tem problema....
+            </small>
+            <div>
+               <button type="button" class="btn btn-danger" onclick="mudarFoto5()">Voltar <=</button>              
+            </div>
+        </div>
+    </div>
+
+    <div class="conteudo16">
+        <div>
+            <button onclick="mudarFotoFinal()"><img class="icoRight" src="./ImagensNovas/icoLeft.jpeg" alt=""></button>
+        </div>
+        <div class="conteiner">
+            <h1 style="margin-top: 10%;">Hoje</h1>
+            <h5></h5>
+            <div style="margin-top: 15%; margin-bottom: 20%;">
+                <small>
+                    <h1 style="color: red;">ATENÇÃO, OS LIMITES DO PLANO NORMAL FORAM ATINGIDOS</h3>
+                </small>
+            </div>
+            <small style="margin-top: 5%;">
+                <h5>Resonda o Questinário abaixo para ter acesso aos recursos do palno plus</h5>
+            </small>
+            <a href="./pedidoNamoro/pedido.html"><button type="button" class="btn btn-danger">Clique
+                    aqui!</button></a>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
