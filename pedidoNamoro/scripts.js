@@ -1,7 +1,7 @@
 function accepted() {
   alert(
     "Você aceitou namorar com Carlos Gonçales," +
-      "por falor envie o número do seu dedo! e fotos para sugestão de Anliança"
+      "por falor envie o número do seu dedo! e fotos para sugestão de Aliança"
   );
   // redireciona para um URL após clicar no SIM
   location.href = "https://music.youtube.com/watch?v=izGwDsrQ1eQ";
